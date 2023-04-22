@@ -20,7 +20,7 @@ public class Main {
             }
         }
 
-        String output = GetOutPutText(outputArrayList, InputData.dataSize);
+        String output = GetOutputText(outputArrayList, InputData.dataSize);
         writeOutput(output);
         System.out.println(output);
     }
@@ -42,7 +42,7 @@ public class Main {
     }
 
 
-    public static String GetOutPutText(ArrayList<String> array, int dataSize){   // Return String with 12 / size numbers per line
+    public static String GetOutputText(ArrayList<String> array, int dataSize){   // Return String with 12 / size numbers per line
         String output = "";
         int maxLineContent = 12 / dataSize;
         int lineContentCounter = 0;

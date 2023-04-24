@@ -53,10 +53,10 @@ public class InputData {
         inputFileName = scanner.nextLine();
         input = getFileContent(inputFileName);
 
-        System.out.print("Byte ordering: ");
+        System.out.print("Byte ordering(l / b): ");
         orderType = (scanner.nextLine().equals("l"))? OrderType.LittleEndian: OrderType.BigEndian;
 
-        System.out.print("Data type: ");
+        System.out.print("Data type(unsigned / signed / float): ");
         String dataTypeInput = scanner.nextLine();
         if(dataTypeInput.equals(("int")))
             dataType = DataType.SignedInteger;
@@ -68,7 +68,7 @@ public class InputData {
             System.out.println("ERROR: You Entered Invalid DataType");
         }
 
-        System.out.print("Data type Size: ");
+        System.out.print("Data type Size(1 / 2 / 3 / 4): ");
         dataSize = scanner.nextInt();
     }
 }
